@@ -1,0 +1,16 @@
+p{
+  font-family:Roboto, Arial;
+  margin: 0px;
+
+}
+
+body{
+  font-family:Roboto, Arial;
+  margin: 0px;
+  padding: 80px 40px 0 95px ;
+  background-color: rgb(245, 241, 241);
+}
+
+.icon-menu , .icon-logo , .icon-search-button , .icon-mic-button , .icon-upload , .icon-youtube-app , .notification , .my-channel , .sidebar-icon , .thumbnail , .channel-pic , .video-title , .video-author{
+  cursor: pointer;
+}

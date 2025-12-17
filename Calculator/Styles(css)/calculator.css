@@ -1,0 +1,54 @@
+body{
+  margin-top: 100px;
+  font-family: Arial;
+  background-color:black;
+}
+
+.display{
+  display: block;
+  margin: 0 auto 8px;
+  width: 601px;
+  height: 35px;
+  padding: 15px 10px;
+  border: solid 2px rgb(0, 0, 0);
+  outline:none;
+  
+}
+
+.all-button{
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  gap: 10px 8px;
+  grid-template-rows:60px 60px 60px 60px 60px 60px ;
+  justify-content: center;
+}
+
+.number-button{
+  font-weight: bold;
+  background-color: lightgray;
+  border: solid 1px grey; 
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sign-button{
+  font-weight: bold;
+  background-color: rgb(225, 75, 75);
+  border: solid 1px rgb(160, 0, 0);
+  cursor: pointer;
+}
+
+.delete-button{
+  font-weight: bold;
+  background-color: rgb(70, 175, 70);
+  border: solid 1px green;
+  cursor: pointer;
+}
+
+.equal-button{
+  font-weight: bold;
+  color: white;
+  background-color: rgb(40, 40, 40);
+  border: solid 1px black;
+  cursor: pointer;
+}

@@ -1,0 +1,85 @@
+body{
+  background-color: black;
+  font-family: Arial;
+  margin-bottom: 50px;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.rps-title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.keyboard-instruction{
+  font-size: 11px;
+  color: rgb(188, 186, 186);
+  margin-bottom: 30px;
+}
+
+.move-icon{
+  width: 60px;
+}
+
+.move-button{
+  background-color: transparent;
+  border: 3px solid darkblue;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 10px 5px 20px 0;
+  cursor: pointer;
+}
+
+.choice-icon{
+  width: 30px;
+}
+
+.move{
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.result{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.score{
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reset-button{
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 25, 0);
+  border: solid 1px red;
+}
+
+
+.autoPlay-button{
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(90, 210, 90);
+  border: solid 1px green;
+}
+
+.stopPlay-button{
+  background-color: rgb(255, 25, 0);
+  border: solid 1px red;
+}
+
+
+.reset-autoPlay-button{
+  display: block;
+}
+
+
