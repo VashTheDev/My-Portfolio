@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaunchX TaskFlow - Task Management SaaS</title>
+    <meta
+      name="description"
+      content="LaunchX TaskFlow helps teams organize tasks, collaborate in real time, and deliver projects on schedule."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER: logo + primary navigation -->
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="logo" href="#top">LaunchX TaskFlow</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION:
+           h1 = main headline
+           p = subheadline
+           button = primary CTA
+           img = hero illustration -->
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <h1>Organize Work. Focus on What Matters Most.</h1>
+          <p>
+            LaunchX TaskFlow gives startups, remote teams, and freelancers a clear view of
+            priorities, progress, and deadlines in one simple workspace.
+          </p>
+          <button class="primary-button" type="button" data-modal-open>
+            Start Free Trial
+          </button>
+        </div>
+        <div class="hero-media">
+          <img
+            src="assets/hero-dashboard.svg"
+            alt="Productivity dashboard illustration"
+          />
+        </div>
+      </section>
+
+      <!-- FEATURES / SERVICES: 3-4 cards with icon, title, description -->
+      <section class="features" id="features">
+        <h2>Features Built for Focused Teams</h2>
+        <ul class="feature-grid">
+          <li class="feature-card">
+            <img src="assets/icon-priority.svg" alt="Priority flag icon" />
+            <h3>Smart Prioritization</h3>
+            <p>
+              Sort tasks by impact and urgency so every sprint starts with the work that
+              moves projects forward.
+            </p>
+          </li>
+          <li class="feature-card">
+            <img src="assets/icon-collaboration.svg" alt="Team collaboration icon" />
+            <h3>Team Collaboration</h3>
+            <p>
+              Keep feedback in one place with comments, mentions, and shared task
+              ownership for distributed teams.
+            </p>
+          </li>
+          <li class="feature-card">
+            <img src="assets/icon-reminders.svg" alt="Reminder bell icon" />
+            <h3>Due Dates & Reminders</h3>
+            <p>
+              Automate reminders and avoid missed handoffs with clear due dates and
+              calendar sync.
+            </p>
+          </li>
+          <li class="feature-card">
+            <img src="assets/icon-analytics.svg" alt="Analytics dashboard icon" />
+            <h3>Progress Dashboards</h3>
+            <p>
+              Track milestones and workloads with visual reports that keep leadership and
+              clients aligned.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ABOUT / WHY CHOOSE US: trust-focused text + image -->
+      <section class="about" id="about">
+        <div class="about-content">
+          <h2>Why Teams Choose LaunchX TaskFlow</h2>
+          <p>
+            Messy workflows slow teams down. LaunchX TaskFlow brings tasks, files, and
+            conversations together so everyone knows what to do next.
+          </p>
+          <p>
+            From kickoff to delivery, teams stay accountable with transparent ownership,
+            clean timelines, and real-time updates.
+          </p>
+        </div>
+        <div class="about-media">
+          <img
+            src="assets/about-collaboration.svg"
+            alt="Team collaborating with shared tasks"
+          />
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS: realistic names + quotes -->
+      <section class="testimonials" id="testimonials">
+        <h2>Trusted by Productivity-First Teams</h2>
+        <div class="testimonial-grid" data-carousel>
+          <article class="testimonial-card">
+            <p>
+              “We cut weekly planning time in half. Everyone can see priorities without
+              digging through emails.”
+            </p>
+            <h3>Rachel Kim</h3>
+            <span>Operations Lead, BrightForge</span>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              “TaskFlow keeps our remote team aligned. Deadlines and updates are always
+              clear.”
+            </p>
+            <h3>Omar Patel</h3>
+            <span>Founder, Northwind Studio</span>
+          </article>
+          <article class="testimonial-card">
+            <p>
+              “The dashboards give us instant visibility into progress and workload.”
+            </p>
+            <h3>Elena Vargas</h3>
+            <span>Product Manager, SignalPath</span>
+          </article>
+        </div>
+        <div class="carousel-controls">
+          <button class="secondary-button" type="button" data-carousel-prev>
+            Previous
+          </button>
+          <button class="secondary-button" type="button" data-carousel-next>
+            Next
+          </button>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION: short persuasive line + button -->
+      <section class="cta" id="pricing">
+        <div class="cta-content">
+          <h2>Ready to bring clarity to every project?</h2>
+          <p>Start your free trial today and see how fast your team can deliver.</p>
+        </div>
+        <button class="primary-button" type="button" data-modal-open>
+          Get Started Free
+        </button>
+      </section>
+    </main>
+
+    <!-- FOOTER: navigation links + social icons + copyright -->
+    <footer class="site-footer" id="contact">
+      <div class="footer-brand">
+        <span>LaunchX TaskFlow</span>
+        <p>Productivity tools for modern teams.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="footer-social" aria-label="Social links">
+        <li><a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.twitter.com" aria-label="Twitter">Twitter</a></li>
+        <li><a href="https://www.youtube.com" aria-label="YouTube">YouTube</a></li>
+      </ul>
+      <p class="footer-copy">© 2024 LaunchX TaskFlow. All rights reserved.</p>
+    </footer>
+
+    <!-- CTA MODAL: optional lead capture -->
+    <div class="modal" data-modal>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <h2 id="modal-title">Start Your Free Trial</h2>
+        <p>
+          Share your email and a LaunchX specialist will get your workspace ready within
+          one business day.
+        </p>
+        <form class="modal-form">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required />
+          <button class="primary-button" type="submit">Request Access</button>
+        </form>
+        <button class="secondary-button" type="button" data-modal-close>
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
