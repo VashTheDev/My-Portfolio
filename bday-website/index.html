@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#8b1e3f" />
+    <title>for you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <div class="orb a"></div>
+      <div class="orb b"></div>
+      <div class="orb c"></div>
+    </div>
+
+    <main class="app">
+      <section class="screen cover on" id="screen-cover">
+        <div class="seal" aria-hidden="true">♥</div>
+        <p class="kicker" id="coverKicker">for you, only you</p>
+        <h1>Hello, <span id="who">my love</span></h1>
+        <p class="lede" id="coverQuestion"></p>
+        <div class="actions">
+          <button class="btn primary" id="yesBtn" type="button"></button>
+          <button class="btn ghost shy" id="noBtn" type="button"></button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-note">
+        <p class="kicker">a small truth</p>
+        <h2>why you matter</h2>
+        <div class="paper" id="noteBody"></div>
+        <p class="hint">This page is the short note — not the full letter.</p>
+        <div class="bottom-bar">
+          <button class="btn primary" id="toMenu" type="button">Show me</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-menu">
+        <div class="menu-head">
+          <p class="kicker">open every door</p>
+          <h2>I made this for you</h2>
+          <p>Tap a little piece of us.</p>
+        </div>
+        <div class="grid">
+          <button class="card" type="button" data-go="us">
+            <div class="icon">📷</div>
+            <h3>Us</h3>
+            <p>our timeline</p>
+          </button>
+          <button class="card" type="button" data-go="love">
+            <div class="icon">♡</div>
+            <h3>Why I love you</h3>
+            <p>the list</p>
+          </button>
+          <button class="card" type="button" data-go="letters">
+            <div class="icon">✉</div>
+            <h3>Letters</h3>
+            <p>paper &amp; a note</p>
+          </button>
+          <button class="card" type="button" data-go="voices">
+            <div class="icon">♫</div>
+            <h3>Voices</h3>
+            <p>hear me</p>
+          </button>
+        </div>
+        <button class="finale" id="finale" type="button" data-go="ending" disabled hidden>
+          🎉 Happy birthday! 🎊
+        </button>
+      </section>
+
+      <section class="screen" id="screen-us">
+        <button class="back" type="button" data-go="menu">← menu</button>
+        <p class="kicker">one beat at a time</p>
+        <h2>Us</h2>
+        <p class="hint">Put files in media/us/ then set src in js/content.js → us</p>
+        <div class="timeline" id="timeline"></div>
+        <div class="tl-nav">
+          <button class="btn ghost" id="tlPrev" type="button">Earlier</button>
+          <span id="tlCount">1 / 1</span>
+          <button class="btn ghost" id="tlNext" type="button">Next</button>
+        </div>
+      </section>
+
+      <section class="screen" id="screen-love">
+        <button class="back" type="button" data-go="menu">← menu</button>
+        <p class="kicker">specific, not generic</p>
+        <h2>Why I love you</h2>
+        <div class="reasons" id="reasons"></div>
+      </section>
+
+      <section class="screen" id="screen-letters">
+        <button class="back" type="button" data-go="menu">← menu</button>
+        <p class="kicker">what we wrote</p>
+        <h2>Letters</h2>
+        <p class="hint">media/letters/ — hers.jpg, yours.jpg, us.jpg — then letters.* in js/content.js</p>
+        <div class="spread">
+          <div class="letter-pic" id="letterHers"></div>
+          <div class="couple" id="couple"></div>
+          <div class="letter-pic" id="letterYours"></div>
+        </div>
+        <div class="extras" id="letterExtras"></div>
+        <p class="kicker" style="margin-top: 8px">the main note</p>
+        <div class="paper typed" id="letterMain"></div>
+      </section>
+
+      <section class="screen" id="screen-voices">
+        <button class="back" type="button" data-go="menu">← menu</button>
+        <p class="kicker">press play</p>
+        <h2>Voices</h2>
+        <p class="hint">Drop mp3/m4a in media/voices/ then set voices[n].src</p>
+        <div class="players" id="players"></div>
+      </section>
+
+      <section class="screen ending" id="screen-ending">
+        <p class="kicker">the last door</p>
+        <h2 id="endTitle"></h2>
+        <div class="paper" id="endBody"></div>
+        <div class="bottom-bar">
+          <button class="btn ghost" type="button" data-go="menu">Revisit anything</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="fx" id="fx" aria-hidden="true"></div>
+
+    <script src="js/content.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
