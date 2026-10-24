@@ -503,7 +503,21 @@ h1 span { color: var(--red); font-style: italic; }
 audio { width: 100%; margin-top: 8px; }
 
 .ending { text-align: center; justify-content: center; gap: 12px; }
-.ending .paper { text-align: left; }
+.ending .paper {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  text-align: left;
+}
+
+@media (max-width: 430px) {
+  .ending .paper {
+    padding: 16px;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+}
 
 /* gentle heart transitions */
 .fx {
